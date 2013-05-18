@@ -103,7 +103,7 @@ The `beer.db` includes the following tables:
 * tags                                              e.g. irish_dry_stout, stout
 * taggings (join table)
 
-For more see the [`beer.sql`](https://github.com/geraldb/beer.db/blob/master/beer.sql) script.
+For more see the [`beer.sql`](https://github.com/openbeer/openbeer.github.io/blob/master/beer.sql) script.
 
 
 ## Command Line Tool - Build Your Own `beer.db` Copy   {#build}
@@ -129,7 +129,7 @@ for more.
 
 ## Talks - Slide Decks   {#talks}
 
-- [`beer.db` - Using Open Beer & Brewery Data in Ruby](https://github.com/geraldb/beer.db/blob/master/talks/beer_db_intro.md)
+- [`beer.db` - Using Open Beer & Brewery Data in Ruby](https://github.com/openbeer/openbeer.github.io/blob/master/talks/beer_db_intro.md)
 
 
 ## Real World Usage
