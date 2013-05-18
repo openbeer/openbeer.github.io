@@ -5,17 +5,24 @@ title: Welcome
 
 # {{ page.title }}
 
-## What's `beer.db`?
+<div class="toc" markdown="1">
+Contents:
+
+* [What's `beer.db`?](#whatis)
+* [Web Admin App](#webadmin)
+* [Web Service / HTTP JSON API](#webservice)
+* [Tables, Schema](#schema)
+* [Command Line Tool - Build Your Own `beer.db` Copy](#build)
+* [Talks - Slide Decks](#talks)
+* [About, License - Questions? Comments?]({#license})
+</div>
+
+
+## What's `beer.db`?   {#whatis}
 
 A free open public domain beer database & schema
 for use in any (programming) language
-(e.g. uses plain text fixtures/data sets).
-
-
-## Plain Text Fixtures
-
-The `beerdb` command line tool
-lets you import beer and brewery data in plain text. Example:
+(e.g. uses plain text fixtures/data sets). Example:
 
 ### Breweries
 
@@ -46,36 +53,17 @@ Dixie Blackened Voodoo|Dixie Blackened Voodoo Lager,  5.0%, by:dixie,  munich_du
 ~~~
 
 
-## Usage
+## Web Admin App {#webadmin}
 
-Build yourself a copy of the `beer.db` from the plain text fixtures
-in three steps.
-
-Step 1:  Get a copy of the `world.db` fixtures
-
-    $ git clone git://github.com/geraldb/world.db.git
-
-Step 2:  Get a copy of the `beer.db` fixtures
-
-    $ git clone git://github.com/geraldb/beer.db.git
-
-Step 3:  Let's build the `beer.db`
-
-    $ beerdb setup --include ./beer.db --worldinclude ./world.db
-
-That's it.
-
-## Web Admin Demo
-
-Try the `beer.db` Web Admin demo running
+Try the `beer.db` Web Admin app running
 on Heroku [`prost.herokuapp.com`](http://prost.herokuapp.com).
 
 ![](i/beer_db_admin_screenshoot.png)
 
 
-## Web Service / HTTP JSON API - `GET /beer/guinness`
+## Web Service / HTTP JSON API - `GET /beer/guinness`   {#webservice}
 
-Try the `beer.db` HTTP JSON API demo running
+Try the `beer.db` HTTP JSON API running
 on Heroku [`prost.herokuapp.com/api`](http://prost.herokuapp.com/api).
 
 Example:
@@ -104,7 +92,8 @@ GET /beer/guinness
 }
 ~~~
 
-## Tables, Schema
+
+## Tables, Schema   {#schema}
 
 The `beer.db` includes the following tables:
 
@@ -116,15 +105,29 @@ The `beer.db` includes the following tables:
 
 For more see the [`beer.sql`](https://github.com/geraldb/beer.db/blob/master/beer.sql) script.
 
-## Command Line Tool
 
-To build your own `beer.db` copy
-use the `beerdb` command line tool.
-See the [`beerdb` command line tool project](https://github.com/geraldb/beer.db.ruby)
+## Command Line Tool - Build Your Own `beer.db` Copy   {#build}
+
+To build your own `beer.db` copy from the plain text fixtures
+use the `beerdb` command line tool. Example:
+
+Step 1:  Get a copy of the `world.db` fixtures
+
+    $ git clone git://github.com/geraldb/world.db.git
+
+Step 2:  Get a copy of the `beer.db` fixtures
+
+    $ git clone git://github.com/geraldb/beer.db.git
+
+Step 3:  Let's build the `beer.db`
+
+    $ beerdb setup --include ./beer.db --worldinclude ./world.db
+
+That's it. See the [`beerdb` command line tool project](https://github.com/geraldb/beer.db.ruby)
 for more.
 
 
-## Talks - Slide Decks
+## Talks - Slide Decks   {#talks}
 
 - [`beer.db` - Using Open Beer & Brewery Data in Ruby](https://github.com/geraldb/beer.db/blob/master/talks/beer_db_intro.md)
 
@@ -140,7 +143,7 @@ for more.
 - [Open Beer Database (`openbeerdatabase.com`)](http://openbeerdatabase.com)  - free, public beer and brewery data API by Tristan Dunn (work-in-progress; API use only - no database available for download)
 - [Open Beer Database (`openbeerdb.com`)](http://openbeerdb.com)  - free, public beer and brewery database (archive, no longer active)
 
-## License
+## License {#license}
 
 The `beer.db` schema, data and scripts are dedicated to the public domain.
 Use it as you please with no restrictions whatsoever.
