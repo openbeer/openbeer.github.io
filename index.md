@@ -14,7 +14,7 @@ Contents:
 * [Tables, Schema](#schema)
 * [Command Line Tool - Build Your Own `beer.db` Copy](#build)
 * [Talks - Slide Decks](#talks)
-* [About, License - Questions? Comments?]({#license})
+* [About, License - Questions? Comments?](#license)
 </div>
 
 
@@ -148,6 +148,5 @@ for more.
 The `beer.db` schema, data and scripts are dedicated to the public domain.
 Use it as you please with no restrictions whatsoever.
 
-## Questions? Comments?
 
-Send them along to the [Open Beer & Brewery Database Forum/Mailing List](http://groups.google.com/group/beerdb). Thanks!
+{% include questions.md %}
