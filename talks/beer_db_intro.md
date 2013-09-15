@@ -376,13 +376,14 @@ And many more text patterns in use.
 ### Links
 
 - [github.com/openbeer](https://github.com/openbeer) - `beer.db` repos
-- [github.com/footballdb](https://github.com/footballdb) - `football.db` repos
-- [github.com/geraldb/world.db](https://github.com/geraldb/world.db)
+- [github.com/openfootball](https://github.com/openfootball) - `football.db` repos
+- [github.com/openmundi](https://github.com/openmundi) - `world.db` repos
 
 
 ### Questions? Comments?
 
-Send them along to the [Open Beer & Brewery Database Forum/Mailing List](http://groups.google.com/group/beerdb). Thanks!
+Send them along to the [Open Beer & Brewery Database Forum/Mailing List](http://groups.google.com/group/beerdb).
+Thanks!
 
 
 # Bonus: Using CSV, JSON, YML 'n' friends
