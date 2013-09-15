@@ -108,20 +108,19 @@ For more see the [`beer.sql`](https://github.com/openbeer/openbeer.github.io/blo
 
 ## Command Line Tool - Build Your Own `beer.db` Copy   {#build}
 
-To build your own `beer.db` copy from the plain text fixtures
-use the `beerdb` command line tool. Example:
+Use the `beerdb` command line tool to build your own `beer.db` copy from the plain text fixtures. Example:
 
 Step 1:  Get a copy of the `world.db` fixtures
 
-    $ git clone git://github.com/geraldb/world.db.git
+    $ git clone git://github.com/openmundi/world.db.git
 
-Step 2:  Get a copy of the `beer.db` fixtures
+Step 2:  Get a copy of the Austrian beers 'n' breweries data set
 
-    $ git clone git://github.com/geraldb/beer.db.git
+    $ git clone git://github.com/openbeer/at-austria.git
 
 Step 3:  Let's build the `beer.db`
 
-    $ beerdb setup --include ./beer.db --worldinclude ./world.db
+    $ beerdb setup --include ./at-austria --worldinclude ./world.db
 
 That's it. See the [`beerdb` command line tool project](https://github.com/geraldb/beer.db.ruby)
 for more.
