@@ -139,7 +139,7 @@ for more.
 ## Alternatives
 
 - [BreweryDB.com](http://www.brewerydb.com) -  beer and brewery data API by PintLabs Inc - (API use only - no database available for download; free demo; $ for use)
-- [Open Beer Database (`openbeerdatabase.com`)](http://openbeerdatabase.com)  - free, public beer and brewery data API by Tristan Dunn (work-in-progress; API use only - no database available for download)
+- [Open Beer Database](https://github.com/openbeerdatabase/openbeerdatabase)  - free, public beer and brewery data API by Tristan Dunn (work-in-progress; API use only - no database available for download)
 - [Open Beer Database (`openbeerdb.com`)](http://openbeerdb.com)  - free, public beer and brewery database (archive, no longer active)
 
 ## License {#license}

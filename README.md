@@ -1,4 +1,4 @@
-openbeer.github.io
-==================
+# openbeer.github.io
 
-Open Beer &amp; Brewery Data (beer.db) Web Site
+Open Beer, Brewery n Brewpub Data (beer.db) Web Site - [openbeer.github.io](http://openbeer.github.io)
+
