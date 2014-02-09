@@ -26,30 +26,60 @@ for use in any (programming) language
 
 ### Breweries
 
+"Classic" comma-separated values single-line record style
+
 ~~~
 alaskan, Alaskan Brewing Co., 1986, AK, Juneau | AK 99801-9540 // 5429 Shaune Dr.
 brooklyn, Brooklyn Brewery, 1987, NY, Brooklyn | NY 11249 // #1 Brewers Row // 79 N 11th St.
 dixie, Dixie Brewing Co., 1907, LA, New Orleans | LA 70119 // 2401 Tulane Ave.
 ~~~
 
+or
+
+"Modern" comma-separated values multi-line record style
+
+~~~
+[alaskan]
+  Alaskan Brewing Co., 1986
+  5429 Shaune Dr. // Juneau, AK 99801-9540
+
+[brooklyn]
+  Brooklyn Brewery, 1987
+  #1 Brewers Row // 79 N 11th St. // Brooklyn, NY 11249
+
+[dixie]
+  Dixie Brewing Co., 1907
+  2401 Tulane Ave. // New Orleans, LA 70119
+~~~
+
+
 ### Beers
 
 ~~~
-Alaskan Pale, 5.2%, by:alaskan, golden_ale
-Alaskan Amber, 5.3%, by:alaskan,  alt
-Alaskan IPA|Alaskan India Pale Ale, 6.2%, by:alaskan, ipa|india_pale_ale
-Alaskan Smoked Porter, 6.5%, by:alaskan,  porter
+_________________________________
+- Alaskan Brewing Co., Juneau
 
-Brooklyn Lager,     5.2%, by:brooklyn, lager|american_amber_lager
-Brooklyn Brown Ale, 5.6%, by:brooklyn,  brown_ale|american_brown_ale
-Brooklyn East India Pale Ale,  6.9%, by:brooklyn,  ipa|india_pale_ale
-Brooklyn Pilsner,  5.1%, by:brooklyn,  pilsner|golden_lager
-Brooklyn Black Chocolate Stout,  10.0%, by:brooklyn, imperial_stout
-Brooklyn Dry Irish Stout, 4.7%, by:brooklyn, dry_irish_stout
-Brooklyn Oktoberfest, 5.5%,    by:brooklyn, maerzen|oktoberfest
+Alaskan Pale,  5.2%, golden_ale
+Alaskan Amber, 5.3%, alt
+Alaskan IPA|Alaskan India Pale Ale, 6.2%,  ipa|india_pale_ale
+Alaskan Smoked Porter, 6.5%,   porter
 
-Dixie|Dixie Lager, 4.6%, by:dixie, american_lager
-Dixie Blackened Voodoo|Dixie Blackened Voodoo Lager,  5.0%, by:dixie,  munich_dunkel|dark_lager
+_______________________
+- Brooklyn Brewery
+
+Brooklyn Lager,     5.2%, lager|american_amber_lager
+Brooklyn Brown Ale, 5.6%,  brown_ale|american_brown_ale
+Brooklyn East India Pale Ale,  6.9%,  ipa|india_pale_ale
+Brooklyn Pilsner,  5.1%,   pilsner|golden_lager
+Brooklyn Black Chocolate Stout,  10.0%,  imperial_stout
+Brooklyn Dry Irish Stout, 4.7%,  dry_irish_stout
+Brooklyn Oktoberfest, 5.5%,   maerzen|oktoberfest
+
+___________________________________
+- Dixie Brewing Co., New Orleans
+
+Dixie|Dixie Lager, 4.6%, american_lager
+Dixie Blackened Voodoo|Dixie Blackened Voodoo Lager,  5.0%,  munich_dunkel|dark_lager
 ~~~
 
 

@@ -27,7 +27,7 @@ for use in any (programming) language
 ~~~
 ### Brewery
 
-guinness, St. James's Gate Brewery / Guinness Brewery, 1759, D, city:dublin
+guinness, St. James's Gate Brewery / Guinness Brewery, 1759, city:dublin
 ~~~
 
 ~~~
@@ -41,53 +41,65 @@ Guinness|Guinness Draught, 4.2%, by:guinness, irish_dry_stout|dry_stout|stout
 
 ~~~
 ##############################
-# Wien
+# Wien (W)
 
-ottakringer, Ottakringer Brauerei, 1838, W,  »
-    « 1160 Wien // Ottakringer Straße 91
+[ottakringer]
+  Ottakringer Brauerei, 1838
+  1160 Wien // Ottakringer Straße 91
 ~~~
 
-Source: [`at-austria/w-wien/breweries.txt`](https://github.com/openbeer/at-austria/blob/master/w-wien/breweries.txt)
+Source: [`at-austria/w-wien/breweries.txt`](https://github.com/openbeer/at-austria/blob/master/1--w-wien--eastern/breweries.txt)
 
 ~~~
 ###########################
-# Niederösterreich
+# Niederösterreich (N)
 
-zwettler, Zwettler Brauerei, 1709, N,  »
-    « 3910 Zwettl // Syrnauer Straße 22-25
+[zwettler]
+  Zwettler Brauerei, 1709
+  3910 Zwettl // Syrnauer Straße 22-25
 
-weitra,   Weitra Bräu Bierwerkstatt, 1321, N,  »
-    « 3970 Weitra // Sparkasseplatz 160, zwettler
+[weitra]
+  Weitra Bräu Bierwerkstatt, 1321
+  3970 Weitra // Sparkasseplatz 160
+  zwettler
 ~~~
 
-Source: [`at-austria/n-niederoesterreich/breweries.txt`](https://github.com/openbeer/at-austria/blob/master/n-niederoesterreich/breweries.txt)
+Source: [`at-austria/n-niederoesterreich/breweries.txt`](https://github.com/openbeer/at-austria/blob/master/1--n-niederoesterreich--eastern/breweries.txt)
 
 
 
 # Example: Beers  - `beers.txt`
 
 ~~~
-Ottakringer Helles,                  5.2 %, 11.8°, by:ottakringer
-Ottakringer Gold Fassl Spezial,      5.6 %, 12.7°, by:ottakringer
-Ottakringer (Gold Fassl) Pur,        5.2 %, 11.8°, by:ottakringer, bio
-Ottakringer (Gold Fassl) Pils,       4.6 %, 11.2°, by:ottakringer
-Ottakringer (Gold Fassl) Zwickl,     5.2 %, 12.2°, by:ottakringer
+__________________________
+- Ottakringer Brauerei
+
+Ottakringer Helles,                  5.2 %, 11.8°
+Ottakringer Gold Fassl Spezial,      5.6 %, 12.7°
+Ottakringer (Gold Fassl) Pur,        5.2 %, 11.8°, bio
+Ottakringer (Gold Fassl) Pils,       4.6 %, 11.2°
+Ottakringer (Gold Fassl) Zwickl,     5.2 %, 12.2°
 ~~~
 
-Source: [`at-austria/w-wien/beers.txt`](https://github.com/openbeer/at-austria/blob/master/w-wien/beers.txt)
+Source: [`at-austria/w-wien/beers.txt`](https://github.com/openbeer/at-austria/blob/master/1--w-wien--eastern/beers.txt)
 
 ~~~
-Zwettler Original,     5.1 %,  11.9°, by:zwettler
-Zwettler Pils,         4.9 %,  11.5°, by:zwettler
-Zwettler Zwickl,       5.5 %,  12.5°, by:zwettler
-Zwettler Dunkles,      3.4 %,  11.5°, by:zwettler
+_______________________
+- Zwettler Brauerei
 
-Weitra Helles,  5.0 %,   11.8°,  by:weitra
-Hadmar,         5.2 %,   12.5°,  by:weitra, bio
+Zwettler Original,     5.1 %,  11.9°
+Zwettler Pils,         4.9 %,  11.5°
+Zwettler Zwickl,       5.5 %,  12.5°
+Zwettler Dunkles,      3.4 %,  11.5°
+
+_________________
+- Weitra Bräu
+
+Weitra Helles,  5.0 %,   11.8°
+Hadmar,         5.2 %,   12.5°,  bio
 ~~~
 
-Source: [`at-austria/n-niederoesterreich/beers.txt`](https://github.com/openbeer/at-austria/blob/master/n-niederoesterreich/beers.txt)
-
+Source: [`at-austria/n-niederoesterreich/beers.txt`](https://github.com/openbeer/at-austria/blob/master/1--n-niederoesterreich--eastern/beers.txt)
 
 
 
@@ -96,7 +108,7 @@ Source: [`at-austria/n-niederoesterreich/beers.txt`](https://github.com/openbeer
 Brewery Model
 
 ~~~
-by = Brewery.find_by_key( 'guinness' )
+by = Brewery.find_by( key: 'guinness' )
 
 by.title
 => 'St. James's Gate Brewery / Guinness Brewery'
@@ -121,7 +133,7 @@ by.beers.first
 Beer Model
 
 ~~~
-b = Beer.find_by_key( 'guinness' )
+b = Beer.find_by( key: 'guinness' )
 
 b.title
 => 'Guinness'
@@ -171,7 +183,7 @@ Wien [Vienna],  W,  1_731_236, m:1_724_000
 Country Model
 
 ~~~
-at = Country.find_by_key( 'at' )
+at = Country.find_by( key: 'at' )
 
 at.title
 => 'Austria'
@@ -194,7 +206,7 @@ at.breweries
 City Model
 
 ~~~
-wien = City.find_by_key( 'wien' )
+wien = City.find_by( key: 'wien' )
 
 wien.title
 => 'Wien'
@@ -382,11 +394,6 @@ And many more text patterns in use.
 
 ### Questions? Comments?
 
-Send them along to the [Open Beer & Brewery Database Forum/Mailing List](http://groups.google.com/group/beerdb).
+Send them along to the [Open Beer, Brewery n Brewpub Database Forum/Mailing List](http://groups.google.com/group/beerdb).
 Thanks!
-
-
-# Bonus: Using CSV, JSON, YML 'n' friends
-
-Use the HTTP API service and export your data in your format of choice.
 
