@@ -144,7 +144,7 @@ for more.
 
 ## Talks - Slide Decks   {#talks}
 
-- [`beer.db` - Using Open Beer & Brewery Data in Ruby](https://github.com/openbeer/talks/blob/master/talks/beer_db_intro.md)
+- [`beer.db` - Using Open Beer & Brewery Data in Ruby](https://github.com/openbeer/talks/blob/master/beer_db_intro.md)
 
 
 ## Real World Usage
