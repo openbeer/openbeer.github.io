@@ -11,7 +11,6 @@ Contents:
 * [What's `beer.db`?](#whatis)
 * [Web Admin App](#webadmin)
 * [Web Service / HTTP JSON API](#webservice)
-* [Tables, Schema](#schema)
 * [Command Line Tool - Build Your Own `beer.db` Copy](#build)
 * [Talks - Slide Decks](#talks)
 * [About, License - Questions? Comments?](#license)
@@ -123,19 +122,6 @@ GET /beer/guinness
 ~~~
 
 
-## Tables, Schema   {#schema}
-
-The `beer.db` includes the following tables:
-
-* beers       (belongs to brewery n brand)          e.g. Guiness Extra Stout
-* brands      (has many beers; belongs to brewery)  e.g. Guiness
-* breweries   (has many brands n beers)             e.g. St. James's Gate Brewery / Guinness Brewery
-* tags                                              e.g. irish_dry_stout, stout
-* taggings (join table)
-
-For more see the [`beer.sql`](https://github.com/openbeer/openbeer.github.io/blob/master/beer.sql) script.
-
-
 ## Command Line Tool - Build Your Own `beer.db` Copy   {#build}
 
 Use the `beerdb` command line tool to build your own `beer.db` copy from the plain text fixtures. Example:
@@ -158,7 +144,7 @@ for more.
 
 ## Talks - Slide Decks   {#talks}
 
-- [`beer.db` - Using Open Beer & Brewery Data in Ruby](https://github.com/openbeer/openbeer.github.io/blob/master/talks/beer_db_intro.md)
+- [`beer.db` - Using Open Beer & Brewery Data in Ruby](https://github.com/openbeer/talks/blob/master/talks/beer_db_intro.md)
 
 
 ## Real World Usage
