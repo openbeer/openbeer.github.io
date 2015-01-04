@@ -1,11 +1,17 @@
+###########
+# site.url, site.title
+
+url:   "http://openbeer.github.io"
+title: "beer.db - Open Beer, Brewery n Brewpubs Data"
 
 
-## markdown: redcarpet
+########
+# more settings
 
 markdown: kramdown
 
 
-exclude: ['README.md']
+exclude: ["README.md"]
 
 safe: true
 lsi: false
