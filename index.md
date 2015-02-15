@@ -21,7 +21,14 @@ Contents:
 
 A free open public domain beer database & schema
 for use in any (programming) language
-(e.g. uses plain text fixtures/data sets). Example:
+(e.g. uses plain text data sets).
+
+
+**Schema Diagram**
+
+![](i/beerdb-models.png)
+
+**Datasets Examples**
 
 ### Breweries
 
